@@ -13,8 +13,8 @@
     </div>
 
     <div class="flex flex-row items-center gap-6">
-        <a class="text-2xl" href="<?= BASE_URL; ?>/home">Accueil</a>
-        <a class="text-2xl" href="<?= BASE_URL; ?>/user">Liste</a>
+        <a class="text-2xl" href="<?= BASE_URL; ?>/book">Accueil</a>
+        <a class="text-2xl" href="<?= BASE_URL; ?>/book">Liste</a>
         <a class="text-2xl" href="<?= BASE_URL; ?>/user/create">Ajouter un livre</a>
     </div>
 

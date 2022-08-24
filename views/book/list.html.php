@@ -7,9 +7,10 @@ include __DIR__.'/../partials/header.html.php';
     <h1 class="text-center text-5xl my-6">Liste des Livres</h1>
         <div class="flex flex-row gap-6">
             <?php foreach ($books as $book) { ?>
-                <div class="flex flex-col gap-6 w-1/5 mx-auto text-center">
+                <div class="flex flex-col w-1/5 mx-auto text-center">
                     <h2 class="text-3xl my-2"><?= $book->title; ?></h2>
                     <p class="text-xl m-2"><?= $book->author; ?></p>
+                    <img src="img/<?= $book->image; ?>" alt="">
                     <p class="text-xl m-2"><?= $book->parution; ?></p>
                     <p class="text-xl m-2"><?= $book->isbn; ?></p>
                     <p class="text-2xl m-2"><?= $book->dfPrice; ?></p>
