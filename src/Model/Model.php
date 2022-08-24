@@ -1,8 +1,8 @@
 <?php
 
-namespace Tp\Books;
+namespace Tp\Books\Model;
 
-use TP\Books\DB;
+use Tp\Books\DB;
 
 class Model
 {
@@ -15,7 +15,7 @@ class Model
 
     public function __get($attribute)
     {
-        return $this->attribute;
+        return $this->$attribute;
     }
 
     public function save()
