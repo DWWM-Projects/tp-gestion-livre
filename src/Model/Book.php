@@ -16,7 +16,7 @@ class Book extends Model
     public function ttc()
     {
         $tax = ($this->df_price * 20) / 100;
-        $ttc = $this->df_price + $tax;
+        $ttc = ($this->df_price + $tax) / 100;
 
         return $ttc;
     }
