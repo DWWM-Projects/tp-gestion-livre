@@ -9,11 +9,11 @@ include __DIR__.'/../partials/header.html.php';
             <?php foreach ($books as $book) { ?>
                 <div class="flex flex-col w-1/5 mx-auto text-center">
                     <h2 class="text-3xl my-2"><?= $book->title; ?></h2>
-                    <p class="text-xl m-2"><?= $book->author; ?></p>
+                    <p class="text-xl m-2">Auteur: <?= $book->author; ?></p>
                     <img src="img/<?= $book->image; ?>" alt="">
-                    <p class="text-xl m-2"><?= $book->parution; ?></p>
-                    <p class="text-xl m-2"><?= $book->isbn; ?></p>
-                    <p class="text-2xl m-2"><?= $book->dfPrice; ?></p>
+                    <p class="text-xl m-2">Date de parution: <?= $book->parution; ?></p>
+                    <p class="text-xl m-2">ISBN: <?= $book->isbn; ?></p>
+                    <p class="text-2xl m-2">Prix TTC: <?= $book->ttc(); ?> €</p>
                     
                 </div>
             <?php } ?>

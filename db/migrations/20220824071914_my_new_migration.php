@@ -20,7 +20,7 @@ final class MyNewMigration extends AbstractMigration
     {
         $this->table('books')
             ->addColumn('title', 'string')
-            ->addColumn('df-price', 'float')
+            ->addColumn('df_price', 'float')
             ->addColumn('author', 'string')
             ->addColumn('isbn', 'string')
             ->addColumn('parution', 'date')
